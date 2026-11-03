@@ -1,0 +1,2 @@
+# enumeration-cli
+automatic enumerator
