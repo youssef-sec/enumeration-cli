@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctf-enum-cli"
+version = "1.0.0"
+description = "Async CTF/lab enumeration with Nmap, Gobuster, Webanalyze, and CVE triage"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ctf-enum = "ctf_enum.main:main"
+
+[tool.setuptools.packages.find]
+include = ["ctf_enum*"]

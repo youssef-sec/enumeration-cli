@@ -1,0 +1,24 @@
+[paths]
+wordlist = "/usr/share/seclists/Discovery/Web-Content/common.txt"
+# After 'webanalyze -update' from the project directory:
+webanalyze_apps = "technologies.json"
+
+[scan]
+min_rate = 2000
+nmap_timeout = 900
+command_timeout = 180
+
+[web]
+threads = 10
+max_concurrency = 3
+http_timeout = 10
+gobuster_timeout = 180
+max_login_paths = 6
+max_body_bytes = 524288
+# False permits self-signed lab TLS certificates. Use True outside labs.
+verify_tls = false
+
+[lookup]
+max_search_terms = 25
+nvd_enabled = false
+nvd_max_queries = 6
